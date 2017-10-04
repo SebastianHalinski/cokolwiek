@@ -8,7 +8,7 @@ class TodoItem():
 
 
     def __init__(self, title, deadline):
-        if type(title) != str or type(deadline) != datetime.date:
+        if not isinstance(deadline, datetime.date) or type(title) != str:
             raise ValueError
 
         else:
