@@ -32,7 +32,7 @@ class TodoItem():
 
         return "{} {}-{} {}".format(mark, self.deadline.day, self.deadline.month, self.title)
 
-# task = TodoItem("Zrob zakupy", datetime.date(2017, 11, 11))
-# print(task)
-# TodoItem.mark(task)
-# print(task)
+task = TodoItem("Zrob zakupy", datetime.date(2017, 11, 11))
+print(task)
+TodoItem.mark(task)
+print(task.deadline)
